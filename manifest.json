@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Story Points Collector",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Run Jira Story Points Collector",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "description": "Automatically calculate the total Story Points for each column in a Jira Swimlane",
+  "icons": {},
+  "author": "Filipe Costa"
+}
