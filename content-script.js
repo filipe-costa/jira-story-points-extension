@@ -1,23 +1,3 @@
-/**
- * Algorithm:
- * Create empty hashmap
- * Get all headers in the swim lane
- * document.querySelectorAll(".ghx-column-header-flex > div > h2")
- * Get titles and add to hashmap { "h2 text value": 1000 }
- * Get all the columns in the swimlane
- * document.querySelectorAll(".ghx-columns li:nth-child(0)")
- * Sum the total points for each story in column X
- * Render in HTML table
- * Allow to filter unnecessary columns by column name in the UI
- */
-
-/**
- * {
- *     column_name: string,
- *     total_estimate: number
- * }
- */
-
 function getSwimlaneHeaders() {
     return Array.from(document.querySelectorAll(".ghx-column-header-flex > div > h2"));
 }
@@ -60,12 +40,3 @@ function main() {
 }
 
 main();
-
-console.log('Hello from the content-script')
-console.log(collectObjectInsights());
-
-
-
-
-
-
